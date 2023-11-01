@@ -1,0 +1,15 @@
+
+[Unit]
+Description=Frappuccino daemon
+After=network.target
+
+[Service]
+
+# Service execution
+###################
+
+ExecStart="/home/USERNAMEPLACEHOLDER/frappuccino/inhibitor.sh"
+
+[Install]
+WantedBy=multi-user.target
+
